@@ -1,0 +1,1 @@
+docker push carapace/proto:latest
