@@ -11,3 +11,10 @@ jobs:
 
     # deploy the image
     - run: make push_image
+
+workflows:
+  version: 2
+  build-push:
+    jobs:
+    - build:
+       context: docker
