@@ -1,2 +1,2 @@
 #!/usr/bin/env bash
-docker build -t carapace/htmlvalidator:latest $DOCKERFILE
+docker build -t carapaceio/htmlvalidator:latest $DOCKERFILE

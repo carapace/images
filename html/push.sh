@@ -1,2 +1,2 @@
 #!/usr/bin/env bash
-docker push carapace/htmlvalidator:latest
+docker push carapaceio/htmlvalidator:latest
