@@ -1,1 +1,2 @@
-docker build -t carapace/go:1.11 $DOCKERFILE
+#!/usr/bin/env bash
+docker build -t $ORG/go:1.11 $DOCKERFILE

@@ -1,5 +1,5 @@
 # Ubuntu image containing pip and python
-FROM carapace/pythonbuilder:3.6
+FROM carapaceio/pythonbuilder:3.6
 
 # File Author / Maintainer
 MAINTAINER carapace.io

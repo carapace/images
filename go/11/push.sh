@@ -1,1 +1,1 @@
-docker push carapace/go:1.11
+docker push $ORG/go:1.11

@@ -1,2 +1,2 @@
 #!/usr/bin/env bash
-docker build -t redfoxio/pythonbuilder:3.6-dev $DOCKERFILE
+docker build -t $ORG/pythonbuilder:3.6-dev $DOCKERFILE

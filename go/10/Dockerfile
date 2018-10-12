@@ -1,7 +1,7 @@
 FROM golang:1.10.3
 
 MAINTAINER carapace.io
-LABEL description="a Go images for CI purposes"
+LABEL description="a Go image for CI purposes"
 LABEL supported="CircleCI"
 LABEL version="0.0.1"
 

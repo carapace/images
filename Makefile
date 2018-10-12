@@ -9,3 +9,6 @@ push_image:
 	@if [ "$(DOCKERFILE)" != "" ]; then\
 			DOCKERFILE=$(DOCKERFILE) $(DOCKERFILE)/push.sh;\
 	fi
+
+all:
+	ORG=carapaceio ./.scripts/all.sh

@@ -7,4 +7,4 @@
 
 
 for f in $(find ../ -name 'build.sh'); do (DOCKERFILE=$(dirname $f) $f); done
-for f in $(find ../ -name 'deploy.sh'); do (DOCKERFILE=$(dirname $f) $f); done
+for f in $(find ../ -name 'push.sh'); do (DOCKERFILE=$(dirname $f) $f); done
