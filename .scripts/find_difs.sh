@@ -9,6 +9,7 @@ GO_1_11_COMMIT=$(git log -1 --format=format:%H --full-diff -- go/11)
 PROTO_COMMIT=$(git log -1 --format=format:%H --full-diff -- proto)
 PYTHON_BUILDER_3_6_COMMIT=$(git log -1 --format=format:%H --full-diff -- python/builder/3.6)
 PYTHON_BUILDER_3_6_DEV_COMMIT=$(git log -1 --format=format:%H --full-diff -- python/builder/3.6-dev)
+HTMLVALIDATOR=$(git log -1 --format=format:%H --full-diff -- html)
 
 
 if [[ $GO_1_10_COMMIT = $LATEST_COMMIT ]];
@@ -26,6 +27,9 @@ elif [[ $PYTHON_BUILDER_3_6_COMMIT = $LATEST_COMMIT ]];
 elif [[ $PYTHON_BUILDER_3_6_DEV_COMMIT = $LATEST_COMMIT ]];
     then
         echo python/builder/3.6-dev
+elif [[ $HTMLVALIDATOR = $LATEST_COMMIT ]];
+    then
+        echo html
 else
      echo ""
      exit 0;
