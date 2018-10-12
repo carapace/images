@@ -1,7 +1,7 @@
 FROM carapace/go:1.11
 
 MAINTAINER carapace.io
-LABEL description="a Go images for CI purposes"
+LABEL description="a protobuf generator images for CI purposes"
 LABEL supported="CircleCI"
 LABEL version="0.0.1"
 
