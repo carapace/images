@@ -1,9 +1,9 @@
-FROM golang:1.11rc1
+FROM golang:1.11.1
 
 MAINTAINER carapace.io
 LABEL description="a Go image for CI purposes"
 LABEL supported="CircleCI"
-LABEL version="0.0.1"
+LABEL version="0.0.2"
 
 ENV GORELEASER_VERSION=0.79.0
 ENV GORELEASER_SHA=14d24fdfdc8a7aff0956e4c0dcfad8a71fbaed804013be4ee93d26955dc75704
