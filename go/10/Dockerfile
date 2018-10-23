@@ -47,6 +47,8 @@ RUN curl -sfL https://install.goreleaser.com/github.com/golangci/golangci-lint.s
 
 RUN curl https://raw.githubusercontent.com/golang/dep/master/install.sh | INSTALL_DIRECTORY=/usr/local/bin sh
 
+RUN GO111MODULE=auto go get -u github.com/dave/courtney
+
 USER circleci
 
 CMD ["/bin/sh"]
