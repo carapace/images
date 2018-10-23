@@ -33,14 +33,13 @@ RUN  wget ${GORELEASER_DOWNLOAD_URL}; \
 			tar -xzf $GORELEASER_DOWNLOAD_FILE -C /usr/bin/ goreleaser; \
 			rm $GORELEASER_DOWNLOAD_FILE;
 
-
 RUN mkdir -p /root/.ssh; \
     chmod 0700 /root/.ssh; \
     ssh-keyscan github.com > /root/.ssh/known_hosts;
 
 RUN groupadd --gid 3434 circleci \
   && useradd --uid 3434 --gid circleci --shell /bin/bash --create-home circleci \
-  && echo 'gopher ALL=NOPASSWD: ALL' >> /etc/sudoers.d/50-circleci \
+  && echo 'circleci ALL=NOPASSWD: ALL' >> /etc/sudoers.d/50-circleci \
   && echo 'Defaults    env_keep += "DEBIAN_FRONTEND"' >> /etc/sudoers.d/env_keep
 
 
